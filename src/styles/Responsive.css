@@ -1,0 +1,21 @@
+@media only screen and (min-width: 321px){
+	.slick-slider-custom-css{
+		/*border:1px solid red;*/
+	}
+	.slick-slider-custom-css img{
+		width:100%;
+	}
+}
+
+@media screen and (min-width: 768px){
+	div{
+		/*border:1px solid #000;*/
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	div{
+		/*border:1px solid #000;*/
+	}	
+}

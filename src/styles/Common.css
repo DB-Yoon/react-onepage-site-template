@@ -1,0 +1,92 @@
+@import 'reset.css';
+@import 'Style.css';
+@import 'Responsive.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+body{  background:#f1f3f5; font-family:'Open Sans', sans-serif; font-size:15px; color:#000; max-width:1920px; width:1920px; }
+
+h1,h2,h3,h4,h5,h6{ font-weight:700; line-height:1.2; }
+h1{ font-size:48px; color:#4c4c4c; line-height:0.8; }
+h6{ font-size:18px; }
+strong{ font-weight:bold; }
+p, span{ color:#000; }
+a,
+button{ cursor:pointer; color:#fff; }
+button{ border:none; border:1px solid #f15922; background:#f15922; padding:21px 110px; display:inline-block; font-size:18px; }
+button:hover{ background:#fff; color:#4c4c4c; transition:.3s ease; }
+input{ width:640px; border:1px solid #808080; outline:none; border-radius:0px; font-size:15px; padding:23px 10px; }
+input::placeholder{ color:#cccccc; }
+
+.center{ text-align:center !important; }
+
+/* clearfix */
+.clearfix{ *zoom:1; }
+.clearfix:before, .clearfix:after{ display:block; content:''; line-height:0; }
+.clearfix:after{ clear:both; }
+
+/* 헤더 컴포넌트 CSS */
+.header{ width:1920px; position:fixed; z-index:10; }
+.header.header-opacity{ background:rgba(0, 0, 0, 0); transition:.5s ease; }
+.header.header-full{ background:rgba(0, 0, 0, 0.8); transition:.5s ease; }
+.header .header-logo,
+.header .header-cus-menu-wrap{  }
+.header .header-logo{ max-width:187px; width:100%; padding:37px 0 10px 96px; float:left; }
+.header .header-logo a{ display:inline-block; width:100%; }
+.header .header-cus-menu{ position:relative; float:right; padding:61px 96px 10px 0; }
+.header .header-cus-menu ul{  }
+.header .header-cus-menu ul li{ display:inline-block; margin-left:50px; }
+.header .header-cus-menu ul li a{ font-weight:bold; font-size:18px; }
+.header .header-cus-menu ul li a.active{ color:#f15922; }
+
+.container{ max-width:1920px; width:100%; }
+
+/* 컬럼 두개 컴포넌트 CSS */
+.col-two{ display:table; margin:0 auto; }
+.col-two .column{ display:table-cell; max-width:805px; padding-left:62px; }
+.col-two .column .column-exp{ margin-top:55px; }
+.col-two .column .column-exp p{ word-wrap:break-word; font-size:16px; color:#808080; line-height:1.5; }
+
+/* 컬럼 세개 / 화살표 컴포넌트 CSS */
+.col-three{ display:table; margin:0 auto; }
+.col-three .column{ display:table-cell; max-width:283px; padding-left:62px; }
+.col-three .column.column-arrow{ position:relative; top:200px; padding:0 54px 0 134px;}
+.col-three .column:first-child{ padding-left:0; }
+.col-three .column .column-step{margin-bottom:37px;}
+.col-three .column .column-exp{ margin-top:30px; }
+.col-three .column .column-exp p{ word-wrap:break-word; font-size:16px; color:#808080; line-height:1.5; }
+
+/* 컬럼 다섯개 컴포넌트 CSS */
+.col-five{ display:table; margin:0 auto; }
+.col-five .column{ display:table-cell; max-width:285px; padding-left:62px; }
+.col-five .column:first-child{ padding-left:0; }
+.col-five .column .column-img,
+.col-five .column .column-exp,
+.col-five .column .column-title{ text-align:left; }
+.col-five .column .column-img{  }
+.col-five .column .column-line{ border-top:4px solid #f15922; width:30px; margin:21px 0; }
+.col-five .column .column-title{  }
+.col-five .column .column-title h6{ color:#4c4c4c; }
+.col-five .column .column-exp{ margin-top:55px; }
+.col-five .column .column-exp p{ word-wrap:break-word; font-size:16px; color:#808080; line-height:1.5; }
+
+/* 포스트 컴포넌트 CSS */
+.post-three{ margin:0 auto; margin-top:80px; margin-bottom:60px; }
+.post-three .post{ max-width:425px; width:100%; display:inline-block; border:1px solid #dddddd; margin-left:52px; vertical-align:top; }
+.post-three .post:first-child{ margin-left:0; }
+.post-three .post .post-thumbnail{  }
+.post-three .post .post-thumbnail img{ width:100%; }
+.post-three .post .post-exp{ margin:33px 23px 0 23px; padding-bottom:36pX; border-bottom:1px solid #dddddd; }
+.post-three .post .post-exp p{ line-height:2; color:#333333; font-size:18px; text-align:left; overflow:hidden; }
+.post-three .post .post-link{ padding:35px 23px; }
+.post-three .post .post-link a{ color:#333333; text-align:left; font-weight:700; }
+
+/* 푸터 컴포넌트 CSS */
+.footer{ position:relative; background:#fff; padding:60px 0 142px 0;}
+.footer a{ color:#000; }
+.footer p{ margin-top:10px; font-size:14px; word-wrap:break-word; }
+.footer p,
+.footer span{ color:#808080; }
+.footer strong{ color:#333333; font-size:16px;}
+.footer .footer-copyright{ margin-top:37px;	}

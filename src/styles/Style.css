@@ -1,0 +1,63 @@
+
+/* 프론트 페이지 슬라이드 컴포넌트 CSS */
+.front-page .container .front-slider-sec .slick-slider-custom-css img{ width:100%; }
+.front-page .container .front-slider-sec .slick-prev:before, .slick-next:before{ content: '' !important; }
+.front-page .container .front-slider-sec .slick-prev, 
+.front-page .container .front-slider-sec .slick-next{ width:36px; height:60px; }
+.front-page .container .front-slider-sec .slick-slider-custom-css ul.slick-dots li.slick-active button:before{ color:#fff; opacity:1; }
+.front-page .container .front-slider-sec .slick-slider-custom-css ul.slick-dots li button:before{ color:#fff; opacity:.5; }
+.front-about-sec,
+.front-benefits-sec,
+.front-apply-sec,
+.front-ourstory-sec,
+.front-subscribe-sec{ padding:122px 0 145px 0; }
+
+/* 프론트 페이지 어바웃 컴포넌트 CSS */
+.front-page .container .front-about-sec{ background:#f5f5f5; padding:181px 0 162px 0; }
+.front-page .container .front-about-sec .about{ padding:0 96px; }
+.front-page .container .front-about-sec .about .about-title{ max-width:1190px; width:100%; margin:0 auto; }
+.front-page .container .front-about-sec .about .about-title p{ color:#808080; margin:50px 0; font-size:20px; line-height:1.5; word-wrap:break-word; }
+.front-page .container .front-about-sec .about .btn-wrap{ margin-top:82px; }
+
+/* 프론트 페이지 베네핏 컴포넌트 CSS */
+.front-page .container .front-benefits-sec{ background:#fff; padding:232px 0 145px 0; }
+.front-page .container .front-benefits-sec .benefits{ padding:0 96px; }
+.front-page .container .front-benefits-sec .benefits .benefits-title{ margin:0 0 182px 0; }
+
+/* 프론트 페이지 어플라이 컴포넌트 CSS */
+.front-page .container .front-apply-sec{ background:#f5f5f5; padding:183px 0 179px 0; }
+.front-page .container .front-apply-sec .apply{ padding:0 96px; }
+.front-page .container .front-apply-sec .apply .apply-title{ max-width:1075px; width:100%; margin:0 auto; }
+.front-page .container .front-apply-sec .apply .apply-title p{ color:#333333; margin:50px 0; font-size:20px; line-height:1.5; word-wrap:break-word; }
+.front-page .container .front-apply-sec .apply .btn-wrap{ margin-top:82px; }
+
+/* 프론트 페이지 아워스토리 컴포넌트 CSS */
+.front-page .container .front-ourstory-sec{ background:#fff; padding:144px 0 104px 0; }
+.front-page .container .front-ourstory-sec .ourstory{ padding:0 96px; }
+
+.scale{
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.scale:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  opacity:.7;
+}
+.thumbnail{width:100%; height:320px; overflow:hidden }
+
+/* 프론트 페이지 서브스크립 컴포넌트 CSS */
+.front-page .container .front-subscribe-sec{ background:#f5f5f5; }
+.front-page .container .front-subscribe-sec .subscribe-title p{ color:#808080; margin:50px 0; font-size:20px; line-height:0.9; }
+.front-page .container .front-subscribe-sec .subscribe-action{ width:100%; }
+.front-page .container .front-subscribe-sec .subscribe-action .input-wrap,
+.front-page .container .front-subscribe-sec .subscribe-action .btn-wrap{ display:inline-block; }
+.front-page .container .front-subscribe-sec .subscribe-action .input-wrap{ margin-right:10px; }
+
