@@ -1,2 +1,6 @@
 # React-Onepage-Site-Template
-React 프레임워크를 활용한 원페이지 사이트 템플릿
+create-react-app을 통하여 원페이지 템플릿 과제겸 제작 진행
+
+2019-01-17
+=============
+
