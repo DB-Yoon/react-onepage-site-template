@@ -78,7 +78,7 @@ input::placeholder{ color:#cccccc; }
 .post-three .post .post-thumbnail{  }
 .post-three .post .post-thumbnail img{ width:100%; }
 .post-three .post .post-exp{ margin:33px 23px 0 23px; padding-bottom:36pX; border-bottom:1px solid #dddddd; }
-.post-three .post .post-exp p{ line-height:2; color:#333333; font-size:18px; text-align:left; overflow:hidden; }
+.post-three .post .post-exp p{ line-height:2; color:#333333; font-size:18px; text-align:left; overflow:hidden; height:9em; text-overflow:ellipsis; }
 .post-three .post .post-link{ padding:35px 23px; }
 .post-three .post .post-link a{ color:#333333; text-align:left; font-weight:700; }
 
