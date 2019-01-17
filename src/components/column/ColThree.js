@@ -1,13 +1,13 @@
 import React from 'react';
 
-const ColThree = ({children, SecColOneImg, SecColTwoImg, SecColThreeImg, SecColArrowImg}) => (
+const ColThree = ({SecColOneImg, SecColTwoImg, SecColThreeImg, SecColArrowImg}) => (
 	<div className='col-three'>
 		<div className='column'>
 			<div className='column-step'>
 				<h6>STEP 1</h6>
 			</div>		
 			<div className='column-img'>
-				<img src={SecColOneImg} alt='이미지1' />
+				<img src={`${SecColOneImg}`} alt='이미지1' />
 			</div>
 			<div className='column-exp'>
 				<p>Register</p>
@@ -15,7 +15,7 @@ const ColThree = ({children, SecColOneImg, SecColTwoImg, SecColThreeImg, SecColA
 		</div>
 		<div className='column column-arrow'>
 			<div className='column-img'>
-				<img src={SecColArrowImg} alt='화살표' />
+				<img src={`${SecColArrowImg}`} alt='화살표' />
 			</div>
 		</div>
 		<div className='column'>
@@ -23,7 +23,7 @@ const ColThree = ({children, SecColOneImg, SecColTwoImg, SecColThreeImg, SecColA
 				<h6>STEP 2</h6>
 			</div>		
 			<div className='column-img'>
-				<img src={SecColTwoImg} alt='이미지2' />
+				<img src={`${SecColTwoImg}`} alt='이미지2' />
 			</div>
 			<div className='column-exp'>
 				<p>Check the date</p>
@@ -31,7 +31,7 @@ const ColThree = ({children, SecColOneImg, SecColTwoImg, SecColThreeImg, SecColA
 		</div>
 		<div className='column column-arrow'>
 			<div className='column-img'>
-				<img src={SecColArrowImg} alt='화살표' />
+				<img src={`${SecColArrowImg}`} alt='화살표' />
 			</div>			
 		</div>
 		<div className='column'>
@@ -39,7 +39,7 @@ const ColThree = ({children, SecColOneImg, SecColTwoImg, SecColThreeImg, SecColA
 				<h6>STEP 3</h6>
 			</div>		
 			<div className='column-img'>
-				<img src={SecColThreeImg} alt='이미지3' />
+				<img src={`${SecColThreeImg}`} alt='이미지3' />
 			</div>
 			<div className='column-exp'>
 				<p>Take a cup of beer</p>

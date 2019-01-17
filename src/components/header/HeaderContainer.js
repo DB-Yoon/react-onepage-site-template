@@ -6,10 +6,6 @@ import HeaderLogoImg        from 'images/logo.png';
 
 let timer = null;
 class HeaderContainer extends Component{
-    constructor(props){
-        super(props);
-    }
-    
     static defaultProps = {
         headerClass        : 'header',
         headerLogoClass    : 'header-logo',
@@ -50,13 +46,11 @@ class HeaderContainer extends Component{
     }
 
     handleClick = (e) => {
-        let thisHref = e.target.getAttribute('href');
-            thisHref = thisHref.replace('/#','');
-        
-        const moveId = document.getElementById(thisHref);
+        let   thisHref = e.target.getAttribute('href');
+              thisHref = thisHref.replace('/#','');
+        const moveId   = document.getElementById(thisHref);
 
         if(moveId){ this.handleOnePageScroll(moveId); }
-        
         this.handleActiveAdd(e);
     }
     render(){

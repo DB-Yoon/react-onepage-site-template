@@ -7,7 +7,10 @@ class FooterContainer extends Component{
         footerClass          : 'footer',
         footerTextClass      : 'footer-text',
         footerCenterClass    : 'center',
-        footerCopyrightClass : 'footer-copyright'
+        footerCopyrightClass : 'footer-copyright',
+        footerEmail          : 'hello@slowalk.co.kr',
+        footerFax            : '+82 2 733 1040',
+        footerTel            : '+82 2 733 1010'
     }
 
     render(){
@@ -17,6 +20,9 @@ class FooterContainer extends Component{
                		footerTextClass={this.props.footerTextClass} 
                		footerCenterClass={this.props.footerCenterClass} 
                		footerCopyrightClass={this.props.footerCopyrightClass} 
+                  footerEmail={this.props.footerEmail}
+                  footerFax={this.props.footerFax}
+                  footerTel={this.props.footerTel}
                	/>
             </Footer>
         );

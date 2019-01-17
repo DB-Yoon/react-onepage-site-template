@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const HeaderCustomers = ({headerCusMenuClass, onClick, onBlur}) => (
-	<div className={headerCusMenuClass}>
+	<div className={`${headerCusMenuClass}`}>
 		<ul>
 			<li><Link to='#about' title='ABOUT' onClick={onClick} onBlur={onBlur}>ABOUT</Link></li>
 			<li><Link to='#benefits' title='BENEFITS' onClick={onClick} onBlur={onBlur}>BENEFITS</Link></li>
