@@ -5,7 +5,7 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-body{  background:#f1f3f5; font-family:'Open Sans', sans-serif; font-size:15px; color:#000; max-width:1920px; width:1920px; }
+body{  background:#f1f3f5; font-family:'Open Sans', sans-serif; font-size:15px; color:#000; }
 
 h1,h2,h3,h4,h5,h6{ font-weight:700; line-height:1.2; }
 h1{ font-size:48px; color:#4c4c4c; line-height:0.8; }
@@ -27,7 +27,7 @@ input::placeholder{ color:#cccccc; }
 .clearfix:after{ clear:both; }
 
 /* 헤더 컴포넌트 CSS */
-.header{ width:1920px; position:fixed; z-index:10; }
+.header{ width:100%; position:fixed; z-index:10; }
 .header.header-opacity{ background:rgba(0, 0, 0, 0); transition:.5s ease; }
 .header.header-full{ background:rgba(0, 0, 0, 0.8); transition:.5s ease; }
 .header .header-logo,
@@ -40,7 +40,7 @@ input::placeholder{ color:#cccccc; }
 .header .header-cus-menu ul li a{ font-weight:bold; font-size:18px; }
 .header .header-cus-menu ul li a.active{ color:#f15922; }
 
-.container{ max-width:1920px; width:100%; }
+.container{ width:1920px; }
 
 /* 컬럼 두개 컴포넌트 CSS */
 .col-two{ display:table; margin:0 auto; }
@@ -83,7 +83,7 @@ input::placeholder{ color:#cccccc; }
 .post-three .post .post-link a{ color:#333333; text-align:left; font-weight:700; }
 
 /* 푸터 컴포넌트 CSS */
-.footer{ position:relative; background:#fff; padding:60px 0 142px 0;}
+.footer{ position:relative; background:#fff; padding:60px 0 142px 0; width:1920px; }
 .footer a{ color:#000; }
 .footer p{ margin-top:10px; font-size:14px; word-wrap:break-word; }
 .footer p,
