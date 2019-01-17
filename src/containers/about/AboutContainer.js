@@ -10,16 +10,36 @@ class AboutContainer extends Component{
     static defaultProps = {
         aboutClass       : 'about',
         aboutTitleClass  : 'about-title',
-        aboutCenterClass : 'center'
+        aboutCenterClass : 'center',
+        aboutColExpOne      : `Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Viverra suspendisse potenti nullam ac tortor. 
+                            A scelerisque purus semper eget duis at tellus at urna.`,
+        aboutColExpTwo      : `Sit amet consectetur adipiscing elit pellentesque. 
+                            Vitae tempus quam pellentesque nec nam aliquam sem et tortor. 
+                            Et pharetra pharetra massa massa ultricies. 
+                            Sit amet consectetur adipiscing elit pellentesque. 
+                            Ac tortor vitae purus faucibus ornare. `,
+        aboutExp            : `Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. 
+                            Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. 
+                            Libero enim sed faucibus turpis in eu mi. 
+                            Consequat ac felis donec et odio pellentesque diam volutpat.`                            
+
     }
 
     render(){
         return(
             <About aboutClass={this.props.aboutClass} aboutCenterClass={this.props.aboutCenterClass}>
-              <AboutText aboutTitleClass={this.props.aboutTitleClass} />
+              <AboutText aboutTitleClass={this.props.aboutTitleClass} AboutExp={this.props.aboutExp} />
                 <ColTwo
                   SecColOneImg={SecColImg_1} 
-                  SecColTwoImg={SecColImg_2} 
+                  SecColTwoImg={SecColImg_2}
+                  ColExpOne={this.props.aboutColExpOne}
+                  ColExpTwo={this.props.aboutColExpTwo}
                 />
                 <ApplyBtn>Apply now</ApplyBtn>
             </About>
