@@ -46,7 +46,7 @@ input::placeholder{ color:#cccccc; }
 .col-two{ display:table; margin:0 auto; }
 .col-two .column{ display:table-cell; max-width:805px; padding-left:62px; }
 .col-two .column .column-exp{ margin-top:55px; }
-.col-two .column .column-exp p{ word-wrap:break-word; font-size:16px; color:#808080; line-height:1.5; }
+.col-two .column .column-exp p{ word-wrap:break-word; font-size:16px; color:#808080; line-height:1.5; text-align:left;}
 
 /* 컬럼 세개 / 화살표 컴포넌트 CSS */
 .col-three{ display:table; margin:0 auto; }
