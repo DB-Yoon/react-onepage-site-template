@@ -55,7 +55,8 @@ class HeaderContainer extends Component{
         
         const moveId = document.getElementById(thisHref);
 
-        this.handleOnePageScroll(moveId);
+        if(moveId){ this.handleOnePageScroll(moveId); }
+        
         this.handleActiveAdd(e);
     }
     render(){
