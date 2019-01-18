@@ -6,6 +6,7 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 body{  background:#f1f3f5; font-family:'Open Sans', sans-serif; font-size:15px; color:#000; }
+::selection{ background:#f15922; }
 
 h1,h2,h3,h4,h5,h6{ font-weight:700; line-height:1.2; }
 h1{ font-size:48px; color:#4c4c4c; line-height:0.8; }

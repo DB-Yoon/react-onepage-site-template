@@ -61,3 +61,7 @@
 .front-page .container .front-subscribe-sec .subscribe-action .btn-wrap{ display:inline-block; }
 .front-page .container .front-subscribe-sec .subscribe-action .input-wrap{ margin-right:10px; }
 
+/* 탑버튼 컴포넌트 CSS */
+.scroll{ background-color:#f15922; width:40px; height:40px; position:fixed; bottom:10px; right:10px; border-radius:5px; border:none; padding:0; z-index:11; }
+.scroll:hover .arrow-up{ color:#4c4c4c; }
+.arrow-up{ color:#fff; }

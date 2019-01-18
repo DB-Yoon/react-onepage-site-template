@@ -5,20 +5,21 @@ import { ApplyContainer }      from 'containers/apply';
 import { OurstoryContainer }   from 'containers/ourstory';
 import { MainSlider }          from 'components/slider';
 import { SubscribeContainer }  from 'components/subscribe';
+import { TopBtn }              from 'components/button';
 
 class main extends Component{
-	componentDidMount(){
-	}
+    componentDidMount(){
+    }
 
-	componentDidUpdate(){
-	}
+    componentDidUpdate(){
+    }
 
-	componentWillUnmount(){
-	}
+    componentWillUnmount(){
+    }
 
     render(){
         return(
-        	<div className='main'>
+            <div className='main'>
                 <section className='front-slider-sec'>
                     <MainSlider />
                 </section>
@@ -37,7 +38,8 @@ class main extends Component{
                 <section className='front-subscribe-sec'>
                     <SubscribeContainer />
                 </section>
-        	</div>
+                <TopBtn scrollStepInPx='50' delayInMs='1' />
+            </div>
         );
     }
 }

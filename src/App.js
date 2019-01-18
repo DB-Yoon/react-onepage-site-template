@@ -1,8 +1,14 @@
-import React, { Component } from 'react';
-import { Route }            from 'react-router-dom';
-import { Main }             from 'pages';
-import HeaderContainer      from 'components/header/HeaderContainer';
-import FooterContainer      from 'components/footer/FooterContainer';
+import React, { Component }  from 'react';
+import { Route }             from 'react-router-dom';
+import { Main }              from 'pages';
+import HeaderContainer       from 'components/header/HeaderContainer';
+import FooterContainer       from 'components/footer/FooterContainer';
+import Common                from './styles/Common.css';
+import { library }           from '@fortawesome/fontawesome-svg-core';
+//import { FontAwesomeIcon }   from '@fortawesome/react-fontawesome';
+import { faAngleUp }         from '@fortawesome/free-solid-svg-icons';
+
+library.add(faAngleUp);
 
 class App extends Component {
   constructor(props){
