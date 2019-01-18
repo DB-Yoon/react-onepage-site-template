@@ -6,6 +6,14 @@ import HeaderLogoImg        from 'images/logo.png';
 
 let timer = null;
 class HeaderContainer extends Component{
+    constructor(props){
+        super(props);
+
+        this.state = {
+            oft : 0
+        }      
+    }
+
     static defaultProps = {
         headerClass        : 'header',
         headerLogoClass    : 'header-logo',
@@ -13,10 +21,10 @@ class HeaderContainer extends Component{
     }
 
     componentDidMount(){
-    // 외부 라이브러리 연동: D3, masonry, etc
-    // 컴포넌트에서 필요한 데이터 요청: Ajax, GraphQL, etc
-    // DOM 에 관련된 작업: 스크롤 설정, 크기 읽어오기 등    
-    
+        // 외부 라이브러리 연동: D3, masonry, etc
+        // 컴포넌트에서 필요한 데이터 요청: Ajax, GraphQL, etc
+        // DOM 에 관련된 작업: 스크롤 설정, 크기 읽어오기 등    
+        window.addEventListener('scroll', this.handleScroll);
     }
 
     componentDidUpdate() {
@@ -25,6 +33,23 @@ class HeaderContainer extends Component{
 
     componentWillUnmount() {
         // 이벤트, setTimeout, 외부 라이브러리 인스턴스 제거
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = (e) => {
+        const headerSelect = document.querySelector('.header');
+        let   offsetTop    = document.getElementById('front').getBoundingClientRect().top;
+        //let   offsetTop    = this.front.getBoundingClientRect().top;
+        
+        this.setState({ oft:offsetTop });
+
+        if(0 > this.state.oft){
+          headerSelect.classList.add('header-full');
+          headerSelect.classList.remove('header-opacity');
+        }else{
+          headerSelect.classList.add('header-opacity');
+          headerSelect.classList.remove('header-full');
+        }
     }
 
     ActiveAdd = (e) =>{
