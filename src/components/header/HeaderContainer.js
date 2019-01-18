@@ -27,12 +27,19 @@ class HeaderContainer extends Component{
         // 이벤트, setTimeout, 외부 라이브러리 인스턴스 제거
     }
 
-    handleActiveAdd = (e) =>{
-        return e.target.classList.add('active');
-    }
-    
-    handleClickReset = (e) => {
-        return e.target.classList.remove('active');
+    ActiveAdd = (e) =>{
+        const menuPrentNode = document.querySelector('.header-cus-menu');
+        let   child         = menuPrentNode.childNodes[0].children,
+              current       = null,
+              menuTitleGet  = null;
+
+        for(var i = 0; i < child.length; i++){
+            current      = e.target;
+            menuTitleGet = child[i].children[0].getAttribute('title');
+
+            if(current.getAttribute('title') === menuTitleGet){ current.classList.add('active'); }
+            else{ child[i].children[0].classList.remove('active'); }
+        }
     }
 
     handleOnePageScroll = (obj) => {
@@ -51,7 +58,7 @@ class HeaderContainer extends Component{
         const moveId   = document.getElementById(thisHref);
 
         if(moveId){ this.handleOnePageScroll(moveId); }
-        this.handleActiveAdd(e);
+        this.ActiveAdd(e);
     }
     render(){
         const { handleClick, handleClickReset } = this;
@@ -59,7 +66,7 @@ class HeaderContainer extends Component{
         return(
             <Header headerClass={this.props.headerClass}>
                 <HeaderLogo headerLogoClass={this.props.headerLogoClass} HeaderLogoImport={HeaderLogoImg} />
-                <HeaderCustomers headerCusMenuClass={this.props.headerCusMenuClass} onClick={handleClick} onBlur={handleClickReset} />
+                <HeaderCustomers headerCusMenuClass={this.props.headerCusMenuClass} onClick={handleClick} />
             </Header>
         );
     }

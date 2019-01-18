@@ -15,7 +15,7 @@ strong{ font-weight:bold; }
 p, span{ color:#000; }
 a,
 button{ cursor:pointer; color:#fff; }
-button{ border:none; border:1px solid #f15922; background:#f15922; padding:21px 110px; display:inline-block; font-size:18px; }
+button{ outline:none; border:none; border:1px solid #f15922; background:#f15922; padding:21px 110px; display:inline-block; font-size:18px; }
 button:hover{ background:#fff; color:#4c4c4c; transition:.3s ease; }
 input{ width:640px; border:1px solid #808080; outline:none; border-radius:0px; font-size:15px; padding:23px 10px; }
 input::placeholder{ color:#cccccc; }
