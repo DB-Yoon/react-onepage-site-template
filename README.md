@@ -10,4 +10,4 @@ create-react-app을 통하여 원페이지 템플릿 과제겸 제작 진행중
 
 2019-01-19 DB의 멘타루
 =============
-1. IE10에서 Map이 정의되지 않았다는 에러 발생 -> New create-react-app 생성 후 테스트 결과 동일한 에러 
+1. IE10에서 Map이 정의되지 않았다는 에러 발생 -> New create-react-app 생성 후 테스트 결과 동일한 에러 발생
