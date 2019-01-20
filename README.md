@@ -11,7 +11,7 @@ create-react-app을 통하여 원페이지 템플릿 과제겸 제작 진행중
 2019-01-19 DB의 멘타루
 =============
 
-##1. IE10 Map 에러 해결
+## 1. IE10 Map 에러 해결
 polyfill bundle 추가
 
 public/index.html
