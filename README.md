@@ -12,7 +12,7 @@ create-react-app을 통하여 원페이지 템플릿 과제겸 제작 진행중
 =============
 
 ### 1. IE10 Map 에러 해결
-#### 1-1 polyfill bundle 추가
+##### 1-1. polyfill bundle 추가
 
 public/index.html
 ```javascript
