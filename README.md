@@ -13,22 +13,19 @@ create-react-app을 통하여 원페이지 템플릿 과제겸 제작 진행중
 
 ### 1. 웹호환성
 ##### 1-1. IE10
-###### polyfill bundle 추가(public/index.html)
+###### Map 에러 => polyfill bundle 추가(public/index.html)
 ```javascript
 <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CMap%2CObject.setPrototypeOf"></script>
 ```
-
-##### 1-2. IE9
-
-src/index.js
+###### IE9 - 11 polyfill 추가(src/index.js)
 ```
 npm install --save react-app-polyfill
 ```
-```
+```javascript
 import 'react-app-polyfill/ie9'; // For IE 9-11 support
 ```
-
-polyfills.js
+##### 1-2. IE9
+###### 에러 : react-slick matchmedia not present legacy browsers require a polyfill (src/polyfills.js)
 ```javascript
 'use strict';
 
@@ -39,4 +36,7 @@ window.matchMedia = window.matchMedia || function () {
 		removeListener : function () {} 
 	}; 
 };
+```
+```javascript
+import './polyfills';
 ```
