@@ -10,6 +10,19 @@ create-react-app을 통하여 원페이지 템플릿 과제겸 제작 진행중
 
 2019-01-19 DB의 멘타루
 =============
+
 ```javascript
 <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CMap%2CObject.setPrototypeOf"></script>
+```
+
+```
+'use strict';
+
+window.matchMedia = window.matchMedia || function () { 
+	return { 
+		matches : false, 
+		addListener : function () {}, 
+		removeListener : function () {} 
+	}; 
+};
 ```
