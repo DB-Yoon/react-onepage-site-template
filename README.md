@@ -11,12 +11,15 @@ create-react-app을 통하여 원페이지 템플릿 과제겸 제작 진행중
 2019-01-19 DB의 멘타루
 =============
 
-### 1. IE10 Map 에러 해결
-##### 1-1. polyfill bundle 추가(public/index.html)
-
+### 1. 웹호환성
+##### 1-1. IE10
+###### polyfill bundle 추가(public/index.html)
 ```javascript
 <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CMap%2CObject.setPrototypeOf"></script>
 ```
+
+##### 1-2. IE9
+
 src/index.js
 ```
 npm install --save react-app-polyfill
