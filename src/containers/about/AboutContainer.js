@@ -11,23 +11,15 @@ class AboutContainer extends Component{
         aboutClass       : 'about',
         aboutTitleClass  : 'about-title',
         aboutCenterClass : 'center',
-        aboutColExpOne      : `Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Viverra suspendisse potenti nullam ac tortor. 
-                            A scelerisque purus semper eget duis at tellus at urna.`,
-        aboutColExpTwo      : `Sit amet consectetur adipiscing elit pellentesque. 
-                            Vitae tempus quam pellentesque nec nam aliquam sem et tortor. 
-                            Et pharetra pharetra massa massa ultricies. 
-                            Sit amet consectetur adipiscing elit pellentesque. 
-                            Ac tortor vitae purus faucibus ornare. `,
-        aboutExp            : `Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. 
-                            Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. 
-                            Libero enim sed faucibus turpis in eu mi. 
-                            Consequat ac felis donec et odio pellentesque diam volutpat.`                            
+        aboutColExpOne      : `Juventus AC Milan Inter Milan Chelsea Manchester City 
+                               Tottenham Manchester United Arsenal Liverpool Newcastle Leicester City Everton 
+                               Watford Real Madrid Barcelona Atletico Madrid Valencia Dortmund Bayern Munich.`,
+        aboutColExpTwo      : `Juventus AC Milan Inter Milan Chelsea Manchester City 
+                               Tottenham Manchester United Arsenal Liverpool Newcastle Leicester City Everton 
+                               Watford Real Madrid Barcelona Atletico Madrid Valencia Dortmund Bayern Munich.`,
+        aboutExp            : `Juventus AC Milan Inter Milan Chelsea Manchester City 
+                               Tottenham Manchester United Arsenal Liverpool Newcastle Leicester City Everton 
+                               Watford Real Madrid Barcelona Atletico Madrid Valencia Dortmund Bayern Munich`                            
 
     }
 

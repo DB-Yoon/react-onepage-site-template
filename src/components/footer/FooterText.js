@@ -3,8 +3,8 @@ import React from 'react';
 const FooterText = ({footerTextClass, footerCenterClass, footerCopyrightClass, footerEmail, footerTel, footerFax}) => (
     <div className={`${footerTextClass} ${footerCenterClass}`}>
     	<div>
-	    	<p>Sit amet consectetur adipiscing elit pellentesque.</p>
-	    	<p>Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Et pharetra pharetra massa massa ultricies.</p>
+	    	<p>Adaptive text input with footer component response</p>
+	    	<p>Style must also be applied in the footer component.</p>
     	</div>
     	<div>
     		<p>
@@ -17,7 +17,7 @@ const FooterText = ({footerTextClass, footerCenterClass, footerCopyrightClass, f
 				<span>E-mail.&nbsp;</span>
 				<a href={`mailto:${footerEmail}`} title={`${footerEmail}`}><strong>{`${footerEmail}`}</strong></a>
 			</p>
-			<p className={`${footerCopyrightClass}`}>Copyright(c)2018 by <strong>slowalk</strong> All Rights Reserved.</p>
+			<p className={`${footerCopyrightClass}`}>Copyright(c)2018 by <strong>DB.Yoon</strong> All Rights Reserved.</p>
 		</div>
     </div>
 );

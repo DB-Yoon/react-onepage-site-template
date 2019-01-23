@@ -15,7 +15,7 @@ strong{ font-weight:bold; }
 p, span{ color:#000; }
 a,
 button{ cursor:pointer; color:#fff; }
-button{ outline:none; border:none; border:1px solid #f15922; background:#f15922; padding:21px 110px; display:inline-block; font-size:18px; }
+button{ outline:none; border:1px solid #f15922; background:#f15922; padding:21px 110px; display:inline-block; font-size:18px; }
 button:hover{ background:#fff; color:#4c4c4c; transition:.3s ease; }
 input{ width:640px; border:1px solid #808080; outline:none; border-radius:0px; font-size:15px; padding:23px 10px; }
 input::placeholder{ color:#cccccc; }
@@ -79,7 +79,7 @@ input::placeholder{ color:#cccccc; }
 .post-three .post .post-thumbnail{  }
 .post-three .post .post-thumbnail img{ width:100%; }
 .post-three .post .post-exp{ margin:33px 23px 0 23px; padding-bottom:36pX; border-bottom:1px solid #dddddd; }
-.post-three .post .post-exp p{ line-height:2; color:#333333; font-size:18px; text-align:left; overflow:hidden; height:9em; text-overflow:ellipsis; }
+.post-three .post .post-exp p{ line-height:2; color:#333333; font-size:18px; text-align:left; overflow:hidden; height:8em; text-overflow:ellipsis; }
 .post-three .post .post-link{ padding:35px 23px; }
 .post-three .post .post-link a{ color:#333333; text-align:left; font-weight:700; }
 

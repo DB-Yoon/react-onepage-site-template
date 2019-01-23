@@ -42,6 +42,7 @@ class MainSlider extends Component{
       slidesToScroll : 1,
       autoplay       : true,
       autoplaySpeed  : 3000,
+      adaptiveHeight : true,
       prevArrow      : <PrevArrow />,
       nextArrow      : <NextArrow />,
       className      : 'slick-slider-custom-css',

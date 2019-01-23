@@ -40,7 +40,7 @@ class HeaderContainer extends Component{
         const headerSelect = document.querySelector('.header');
         let   offsetTop    = document.getElementById('front').getBoundingClientRect().top;
         //let   offsetTop    = this.front.getBoundingClientRect().top;
-        
+
         this.setState({ oft:offsetTop });
 
         if(0 > this.state.oft){
@@ -86,7 +86,7 @@ class HeaderContainer extends Component{
         this.ActiveAdd(e);
     }
     render(){
-        const { handleClick, handleClickReset } = this;
+        const { handleClick } = this;
 
         return(
             <Header headerClass={this.props.headerClass}>

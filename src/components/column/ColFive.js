@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ColFive = ({SecColOneImg, SecColTwoImg, SecColThreeImg, SecColFourImg, SecColFiveImg}) => (
+const ColFive = ({SecColOneImg, SecColTwoImg, SecColThreeImg, SecColFourImg, SecColFiveImg, ColExpOne, ColExpTwo, ColExpThree, ColExpFour, ColExpFive}) => (
 	<div className='col-five'>
 		<div className='column'>
 			<div className='column-img'>
@@ -8,12 +8,10 @@ const ColFive = ({SecColOneImg, SecColTwoImg, SecColThreeImg, SecColFourImg, Sec
 			</div>
 			<p className='column-line'></p>
 			<div className='column-title'>
-				<h6>LOREM IPSUM</h6>
+				<h6>Premier League</h6>
 			</div>			
 			<div className='column-exp'>
-				<p>Lorem ipsum dolor sit amet, 
-				consectetur adipiscing elit, 
-				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>{`${ColExpOne}`}</p>
 			</div>
 		</div>
 		<div className='column'>
@@ -22,11 +20,10 @@ const ColFive = ({SecColOneImg, SecColTwoImg, SecColThreeImg, SecColFourImg, Sec
 			</div>
 			<p className='column-line'></p>
 			<div className='column-title'>
-				<h6>PELENTESQUE HABITANT</h6>
+				<h6>Premier League</h6>
 			</div>			
 			<div className='column-exp'>
-				<p>Pellentesque habitant morbi tristique senectus et. 
-				Condimentum vitae sapien pellentesque habitant.</p>
+				<p>{`${ColExpTwo}`}</p>
 			</div>
 		</div>
 		<div className='column'>
@@ -35,12 +32,10 @@ const ColFive = ({SecColOneImg, SecColTwoImg, SecColThreeImg, SecColFourImg, Sec
 			</div>
 			<p className='column-line'></p>
 			<div className='column-title'>
-				<h6>DUIS AT CONSECTETUR</h6>
+				<h6>Premier League</h6>
 			</div>			
 			<div className='column-exp'>
-				<p>Duis at consectetur lorem donec massa. 
-				Phasellus egestas tellus rutrum tellus pellentesque eu. 
-				Cursus risus at ultrices mi tempus imperdiet nulla malesuada. </p>
+				<p>{`${ColExpThree}`}</p>
 			</div>
 		</div>
 		<div className='column'>
@@ -49,11 +44,10 @@ const ColFive = ({SecColOneImg, SecColTwoImg, SecColThreeImg, SecColFourImg, Sec
 			</div>
 			<p className='column-line'></p>
 			<div className='column-title'>
-				<h6>CONQUE QUISQUE</h6>
+				<h6>Premier League</h6>
 			</div>			
 			<div className='column-exp'>
-				<p>Pellentesque id nibh tortor id aliquet. 
-				Congue quisque egestas diam in. Metus vulputate eu scelerisque felis imperdiet proin fermentum.</p>
+				<p>{`${ColExpFour}`}</p>
 			</div>
 		</div>
 		<div className='column'>
@@ -62,10 +56,10 @@ const ColFive = ({SecColOneImg, SecColTwoImg, SecColThreeImg, SecColFourImg, Sec
 			</div>
 			<p className='column-line'></p>
 			<div className='column-title'>
-				<h6>PULVINAR PELLENTESQUE</h6>
+				<h6>Premier League</h6>
 			</div>			
 			<div className='column-exp'>
-				<p>Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+				<p>{`${ColExpFive}`}</p>
 			</div>
 		</div>
 	</div>

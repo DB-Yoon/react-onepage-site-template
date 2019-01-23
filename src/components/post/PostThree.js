@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PostThree = ({SecPostOneImg, SecPostTwoImg, SecPostThreeImg}) => (
+const PostThree = ({SecPostOneImg, SecPostTwoImg, SecPostThreeImg, PostExpOne, PostExpTwo, PostExpThree}) => (
 	<div className='post-three'>
 		<div className='post'>
 				<div className='post-thumbnail thumbnail'>
@@ -11,14 +11,10 @@ const PostThree = ({SecPostOneImg, SecPostTwoImg, SecPostThreeImg}) => (
 					</div>
 				</div>
 				<div className='post-exp'>
-					<p>Lorem ipsum dolor sit amet, 
-					consectetur adipiscing elit, 
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					Ut enim ad minim veniam.
-					</p>
+					<p>{`${PostExpOne}`}</p>
 				</div>
 				<div className='post-link'>
-					<a href='http://luckyd.be:3000/' title='Lorem ipsum'><p>Lorem ipsum</p></a>
+					<a href='http://luckyd.be:3000/' title='Link'><p>Link</p></a>
 				</div>
 		</div>
 		<div className='post'>		
@@ -30,12 +26,10 @@ const PostThree = ({SecPostOneImg, SecPostTwoImg, SecPostThreeImg}) => (
 				</div>
 			</div>
 			<div className='post-exp'>
-				<p>Bacon ipsum dolor amet short ribs brisket venison rump drumstick 
-				pig sausage prosciutto chicken spare ribs salami picanha doner. 
-				</p>
+				<p>{`${PostExpTwo}`}</p>
 			</div>
 			<div className='post-link'>
-				<a href='http://luckyd.be:3000/' title='Bacon ipsum'><p>Bacon ipsum</p></a>
+				<a href='http://luckyd.be:3000/' title='Link'><p>Link</p></a>
 			</div>				
 		</div>
 		<div className='post'>
@@ -47,13 +41,10 @@ const PostThree = ({SecPostOneImg, SecPostTwoImg, SecPostThreeImg}) => (
 				</div>
 			</div>
 			<div className='post-exp'>
-				<p>Cupcake ipsum dolor. 
-				Sit amet marshmallow topping cheesecake muffin. 
-				Halvah croissant candy canes bonbon candy. 
-				</p>
+				<p>{`${PostExpThree}`}</p>
 			</div>
 			<div className='post-link'>
-				<a href='http://luckyd.be:3000/' title='Cupcake ipsum'><p>Cupcake ipsum</p></a>
+				<a href='http://luckyd.be:3000/' title='Link'><p>Link</p></a>
 			</div>				
 		</div>
 	</div>
