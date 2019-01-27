@@ -16,7 +16,7 @@ class TopBtn extends Component{
       // 외부 라이브러리 연동: D3, masonry, etc
       // 컴포넌트에서 필요한 데이터 요청: Ajax, GraphQL, etc
       // DOM 에 관련된 작업: 스크롤 설정, 크기 읽어오기 등    
-      window.addEventListener('scroll', this.test);
+      window.addEventListener('scroll', this.scrollBtnStyle);
   }
 
   componentDidUpdate() {
@@ -25,11 +25,10 @@ class TopBtn extends Component{
 
   componentWillUnmount() {
       // 이벤트, setTimeout, 외부 라이브러리 인스턴스 제거
-      window.removeEventListener('scroll', this.test);
+      window.removeEventListener('scroll', this.scrollBtnStyle);
   }
   
-  test = () => {
-    console.log('test');
+  scrollBtnStyle = () => {
     if (window.pageYOffset === 0){
       this.setState({ 
         btnOpacity : 0,
@@ -45,10 +44,8 @@ class TopBtn extends Component{
    
   scrollStep = () => {
     if (window.pageYOffset === 0){
-        console.log('window.pageYOffset : ' + window.pageYOffset);
         clearInterval(this.state.intervalId);
     }else{
-      console.log('window.pageYOffset1 : ' + window.pageYOffset);
       window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
     }
   }
