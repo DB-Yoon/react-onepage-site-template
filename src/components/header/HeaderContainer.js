@@ -39,8 +39,7 @@ class HeaderContainer extends Component{
     handleScroll = (e) => {
         const headerSelect = document.querySelector('.header');
         let   offsetTop    = document.getElementById('front').getBoundingClientRect().top;
-        //let   offsetTop    = this.front.getBoundingClientRect().top;
-
+        
         this.setState({ oft:offsetTop });
 
         if(0 > this.state.oft){
@@ -49,10 +48,24 @@ class HeaderContainer extends Component{
         }else{
           headerSelect.classList.add('header-opacity');
           headerSelect.classList.remove('header-full');
+
+          this.activeTopDel();
         }
     }
 
-    ActiveAdd = (e) =>{
+    activeTopDel = () => {
+        const menuPrentNode = document.querySelector('.header-cus-menu');
+        let   child         = menuPrentNode.childNodes[0].children,
+              childAtag     = null;
+
+        for(var i = 0; i < child.length; i++){
+            childAtag = child[i].children[0];
+
+            childAtag.classList.remove('active');
+        }
+    }
+
+    activeView = (e) => {
         const menuPrentNode = document.querySelector('.header-cus-menu');
         let   child         = menuPrentNode.childNodes[0].children,
               current       = null,
@@ -83,7 +96,7 @@ class HeaderContainer extends Component{
         const moveId   = document.getElementById(thisHref);
 
         if(moveId){ this.handleOnePageScroll(moveId); }
-        this.ActiveAdd(e);
+        this.activeView(e);
     }
     render(){
         const { handleClick } = this;
