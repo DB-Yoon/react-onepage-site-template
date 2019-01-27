@@ -38,7 +38,7 @@ class main extends Component{
                 <section className='front-subscribe-sec'>
                     <SubscribeContainer />
                 </section>
-                <TopBtn scrollStepInPx='50' delayInMs='1' />
+                <TopBtn scrollStepInPx='40' delayInMs='1' />
             </div>
         );
     }

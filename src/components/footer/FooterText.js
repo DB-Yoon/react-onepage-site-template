@@ -17,7 +17,7 @@ const FooterText = ({footerTextClass, footerCenterClass, footerCopyrightClass, f
 				<span>E-mail.&nbsp;</span>
 				<a href={`mailto:${footerEmail}`} title={`${footerEmail}`}><strong>{`${footerEmail}`}</strong></a>
 			</p>
-			<p className={`${footerCopyrightClass}`}>Copyright(c)2018 by <strong>DB.Yoon</strong> All Rights Reserved.</p>
+			<p className={`${footerCopyrightClass}`}>Copyright(c)2018 by <strong>slowalk</strong> All Rights Reserved.</p>
 		</div>
     </div>
 );

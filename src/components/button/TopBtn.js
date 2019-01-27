@@ -6,15 +6,51 @@ class TopBtn extends Component{
     super();
 
     this.state = {
-        intervalId: 0
+        intervalId    : 0,
+        btnOpacity    : 0,
+        btnVisibility : 'hidden'
     };
   }
+
+  componentDidMount(){
+      // 외부 라이브러리 연동: D3, masonry, etc
+      // 컴포넌트에서 필요한 데이터 요청: Ajax, GraphQL, etc
+      // DOM 에 관련된 작업: 스크롤 설정, 크기 읽어오기 등    
+      window.addEventListener('scroll', this.test);
+  }
+
+  componentDidUpdate() {
+    //window.scrollTo(0,0);
+  }
+
+  componentWillUnmount() {
+      // 이벤트, setTimeout, 외부 라이브러리 인스턴스 제거
+      window.removeEventListener('scroll', this.test);
+  }
   
-  scrollStep = () => {
-    if (window.pageYOffset === 0) {
-        clearInterval(this.state.intervalId);
+  test = () => {
+    console.log('test');
+    if (window.pageYOffset === 0){
+      this.setState({ 
+        btnOpacity : 0,
+        btnVisibility : 'hidden'
+      });
+    }else{
+      this.setState({ 
+        btnOpacity : 1,
+        btnVisibility : 'visible'
+      });
     }
-    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+  } 
+   
+  scrollStep = () => {
+    if (window.pageYOffset === 0){
+        console.log('window.pageYOffset : ' + window.pageYOffset);
+        clearInterval(this.state.intervalId);
+    }else{
+      console.log('window.pageYOffset1 : ' + window.pageYOffset);
+      window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+    }
   }
   
   scrollToTop = () => {
@@ -24,8 +60,8 @@ class TopBtn extends Component{
   
   render(){
     return(
-      <div className='scroll-wrap'>
-        <button title='BackToTop' className='scroll' onClick={()=>{this.scrollToTop();}}>
+      <div className='scroll-wrap' style={{ opacity:this.state.btnOpacity, visibility:this.state.btnVisibility }}>
+        <button title='BackToTop' className='scroll-btn' onClick={()=>{this.scrollToTop();}}>
           <span className='arrow-up'>
           	<FontAwesomeIcon icon={['fas', 'angle-up']} size='1x' fixedWidth />
           </span>

@@ -8,9 +8,9 @@ class FooterContainer extends Component{
         footerTextClass      : 'footer-text',
         footerCenterClass    : 'center',
         footerCopyrightClass : 'footer-copyright',
-        footerEmail          : 'yoon.dbdb@gmail.com',
-        footerFax            : '+82 0 000 0000',
-        footerTel            : '+82 0 000 0000'
+        footerEmail          : 'hello@slowalk.co.kr',
+        footerFax            : '+82 2 733 1010',
+        footerTel            : '+82 2 733 1040'
     }
 
     render(){
